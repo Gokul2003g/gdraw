@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
-    "dev": "node dist/index.js",
+    "dev": "tsc -b && node dist/index.js",
     "start": "tsc -b && node dist/index.js"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@repo/backend-common": "workspace:*"
+    "@repo/backend-common": "workspace:*",
+    "@repo/db": "workspace:*"
   },
   "keywords": [],
   "author": "",
